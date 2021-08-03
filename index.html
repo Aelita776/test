@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru" >
+  <head>
+      <meta charset="utf-8">
+      <title>Информация о себе</title>
+      <script type="text/javascript">
+        function readMore(){
+            var aboutme = document.getElementById ("aboutme");
+            var JS = document.getElementById ("JS");
+            if(aboutme.hidden === false)
+            {aboutme.hidden = true;
+            JS.innerHTML="Подробная информация";}
+            else
+           {aboutme.hidden = false;
+            JS.innerHTML="Скрыть";}
+            }
+      </script>
+      <style>
+        body {
+    background:thistle;
+    overflow-anchor: none;
+}
+    .leftimg {
+    float:left;
+    margin: 10px 10px 10px 15px; 
+    border-radius: 100px;
+    border: 3px solid rgb(0, 19, 128); 
+    box-shadow: 0 0 7px rgb(99, 9, 9); }
+   h1 {color: purple;}
+   h3{
+  text-align-last: center;
+  color: #bd6af5;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+}
+.header {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    border-bottom: solid 3px #bd6af5;
+    padding: 3em 0 1em 0;
+    position: relative;
+  }
+  .links{
+    margin-left: auto;
+    margin-right: 0.0;
+  }
+  .logo {
+    margin-right: auto;
+    color: darkblue;
+    font-style: italic;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  table {
+    padding: auto;
+    border:darkorchid 2px  solid;
+    width: 700px;
+    margin: auto;    
+  } 
+  th{
+    padding: unset;
+    border-collapse: collapse darkorchid 3px solid;
+    text-align: center;
+  } 
+  th { padding: 5px;}
+  form{text-align:center}
+  button {
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #d7468f;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+.anim {-webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}}
+    </style>
+    </head>
+<body> 
+  <header class="header">
+      <a class="logo">Информация о себе</a>
+    <div class="links"> 
+      <a href="https://vk.com/aelita711" > 
+        <img src="https://img.icons8.com/ios/50/000000/vk-circled--v1.png" 
+         width="30"
+         height="30"/>
+      </a>
+      <a href="https://www.instagram.com/f._aelita" > 
+        <img src="https://img.icons8.com/ios/50/000000/instagram-new.png" 
+          width="30"
+          height="30"/>
+      </a>
+    </div>
+  </header>  
+  <p><img src="I8RJFziKCpY.jpg" 
+            width="302"
+            height="234" 
+            alt="Я"
+            class="leftimg">
+        
+        <h1><em>Фаррахова Аэлита Рифатовна</em></h1>
+        <dl>
+            <dt><strong><em>Образование:</em></strong></dt>
+              <dd>Эколог природопользователь</dd>
+            <p><dt><strong><em>Место работы:</em></strong></dt>
+              <dd>ГБУДО "ОЦДОД"</dd></p>
+           <p><dt><strong><em>Адрес</em></strong></dt>
+            <dd>Г.Челябинск</dd></p> 
+            <p><dt><strong><em>Телефон:</em></strong></dt>
+            <dd> +7(996)230-83-89</dd></p>
+           </dl>
+        </p>
+
+        <h3>Знание языков:</h3>
+<p class="Tadle"><table>
+    <tr>
+    <th> </th>
+    <th>Java</th>
+    <th>JavaScript</th>
+    <th>C++</th>
+    <th>C#</th>
+    <th>Swift</th>
+   </tr>
+   <tr>
+    <th> Отличное владение </th>
+    <th>Нет</th>
+    <th>Нет</th>
+    <th>Нет</th>
+    <th>Нет</th>
+    <th>Нет</th>
+   </tr>
+   <tr>
+    <th> Хорошое владение </th>
+    <th>Нет</th>
+    <th>Нет</th>
+    <th>Нет</th>
+    <th>Нет</th>
+    <th>Нет</th>
+   </tr>
+   <tr>
+    <th> Среднее владение </th>
+    <th>Нет</th>
+    <th>Нет</th>
+    <th>Нет</th>
+    <th>Нет</th>
+    <th>Нет</th>
+   </tr>
+   <tr>
+    <th> Плохое владение </th>
+    <th>Да</th>
+    <th>Да</th>
+    <th>Да</th>
+    <th>Да</th>
+    <th>Да</th>
+   </tr>
+ </table>
+    </p>
+    <br>
+    <br>
+    <p hidden>eurieiuebveiubeiub</p>
+    <div>
+      <h3><em>О себе расскажешь?</em></h3>
+      <form action="">
+      <input  type="text" placeholder="Ваше имя">
+      <br>
+      <br>
+      <input type="text" placeholder="Номер телефона">
+       </form>  </div>
+    <br>
+    <br> 
+   <center><button  id="JS" onclick="readMore()" >Подробная информация</button></center>
+<div class="anim" id="aboutme" hidden >
+    <dl>
+        <dt><strong><em>Опыт работы 3 года 4 месяца</em></strong></dt>
+          
+          <dd>Август 2020 — по настоящее время - 1 год 1 месяц <br>
+              ГБУДО "Областной центр дополнительного образования детей" Челябинск, ocdod74.ru/<br>
+              <em>Должность:</em> Педагог дополнительного образования. <br>
+              <em>Задачи:</em> Проведение занятий по экологии для школьников. Организация рабочих мероприятий.</dd>
+          <dd>Февраль 2018 —по январь 2020 - 2 года <br>
+              ООО "ТЕРМИН" Челябинск. <br>
+             <em>Должность:</em> Администратор.<br> 
+             <em>Задачи:</em> Продвижение, общение с клиентами, реклама, хозяйство студии, решение нестандартных задач и поручений.</dd>
+        <p><dt><strong><em>Навыки:</em></strong></dt>
+          <dd>Деловое общение;<br>
+            Работа в команде;<br>
+            Творческое мышление;<br>
+            Организаторские навыки;<br>
+            Организация мероприятий;<br>
+            Навыки межличностного общения;<br>
+            MS PowerPoint;<br>
+            Пользователь ПК;<br>
+            Adobe Photoshop;<br>
+            Навыки презентации;<br>
+            Управление проектами.</dd></p>
+       <p><dt><strong><em>Опыт вождения:</em></strong></dt>
+        <dd>1 год- категория В</dd></p> 
+        <p><dt><strong><em>Высшее образование:</em></strong></dt>
+        <dd> Магистратура: <br>
+             Год окончания - 2020 год. <br>
+             Челябинский государственный университет, Челябинск.<br>
+             Факультет экологии, Экология и природопользование. <br>
+             Бакалавриат: <br>
+             Год окончания - 2018 год. <br>
+             Челябинский государственный университет, Челябинск. <br>
+             Факультет экологии, Экология и природопользование/
+        </dd></p>
+       </dl><H3> Спасибо за внимание</H3>
+    </div>
+    <br>
+    <br>
+    </body>
